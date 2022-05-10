@@ -1,0 +1,18 @@
+<%- include("partials/header") %> 
+
+<section id="compose" class="compose">
+    <div class="container">
+        <h1 style="padding-bottom: 1rem;">Update</h1>
+        <form action="/update" method="POST">
+            <div class="form-group">
+                <label for="inputText"><h6>Title</h6></label>
+                <input type="text" name="updatedTitle" id="inputText" class="form-control" autocomplete="on" autocapitalize="on" value="<%= title %> "><br>
+                <label for="inputTextArea"><h6>Post</h6></label>
+                <textarea cols="30" rows="10" name="updatedBody" id="inputTextArea" class="form-control" autocomplete="on" autocapitalize="on"><%= content %> </textarea>
+            </div><br>
+            <button type="submit" class="btn btn-lg btn-primary">Update</button>
+        </form>
+    </div>
+</section>
+
+<%- include("partials/footer") %> 

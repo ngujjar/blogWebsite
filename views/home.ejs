@@ -1,0 +1,14 @@
+<%- include("partials/header") %> 
+
+<section id="home" class="home">
+    <div class="container">
+        <h1>Home</h1>
+        <p class="para-text"><%= startingContent %> </p>
+        <% userPosts.forEach(function(element) { %> 
+            <h2><%= element.title %> </h2>
+            <p class="para-text"><%= element.content.substring(0, 100) + "..." %> <a href="/posts/<%=element._id%>">Read More</a></p>
+        <% }) %>
+    </div>
+</section>
+
+<%- include("partials/footer") %> 

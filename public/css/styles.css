@@ -1,0 +1,220 @@
+/*
+    Author: Naval Kishore & Vishal Kumar,
+    Date: 10-05-2022
+*/
+
+
+* {
+    -webkit-user-drag: none;
+}
+
+:root {
+    --body-color: #000;
+    --bg-color: #121619;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #212729;
+    border: 3px solid #00a650;
+}
+
+::-webkit-scrollbar-track {
+    background-color: pink;
+}
+
+/* Element Selectors */
+
+body {
+    font-weight: normal;
+    line-height: 1;
+    word-wrap: break-word;
+    text-rendering: optimizeLegibility;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialised;
+}
+
+/* For navbar */
+
+.navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    margin: 12px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c;
+    transition: 0.4s;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    padding: 0 20px !important;
+}
+
+.nav-link a {
+    letter-spacing: normal !important;
+}
+
+/* For home.ejs */
+
+#home {
+    margin: 5% 0;
+}
+
+#home h2 {
+    padding: 1.5rem 0;
+}
+
+/* For compose.ejs */
+
+#compose {
+    margin: 7% 0;
+}
+
+/* For about.ejs */
+
+#about {
+    margin: 7% 0;
+}
+
+#about h1, #contact h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#about img, #contact img {
+    max-width: 300px;
+    border-radius: 100%;
+    border: 3px solid #00a650;
+    display: block;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+#about ul li {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+/* For contact.ejs */
+
+#contact {
+    margin: 7% 0;
+}
+
+#contact p {
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.col-lg-6 i {
+    display: block;
+    margin: auto;
+}
+
+.icons {
+    font-size: 4rem;
+    cursor: pointer;
+    color: #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.icons:hover {
+    color: #14ffec;
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+.col-lg-6 h5 {
+    padding: 10% 0;
+    text-align: center;
+    font-family: "Poppins", serif;
+}
+
+.col-lg-6 h5 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.col-lg-6 h5 a:hover {
+    color: #14ffec;
+    text-decoration: none;
+}
+
+/* For post.ejs */
+
+#post {
+    margin: 7% 0;
+    min-height: 50vh;
+}
+
+#post h1 {
+    padding: 1.5rem 0;
+}
+
+.para-text {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+table {
+    width: 100%;
+}
+
+/* For Mobile Phones */
+
+@media(max-width: 500px) {
+    #home {
+        margin: 22% 0;
+    }
+    
+    #compose {
+        margin: 22% 0;
+    }
+    
+    #about {
+        margin: 22% 0;
+    }
+    
+    #contact {
+        margin: 22% 0;
+    }
+    
+    #post {
+        margin: 22% 0;
+    }
+
+    #about img, #contact img {
+        max-width: 270px;
+    }
+
+    #about h1, contact h1 {
+        font-size: 1.6rem;
+    }
+}

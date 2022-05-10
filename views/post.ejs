@@ -1,0 +1,24 @@
+<%- include("partials/header") %> 
+
+<section id="post" class="post">
+    <div class="container">
+        <table>
+            <tr>
+                <th><h1><%= title %></h1></th>
+                <th>
+                    <div>
+                        <a href="/delete"><h3><i class="fas fa-trash-alt icon-size"></i></h3></i></a>
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        <a href="/update"><h3><i class="fas fa-pen icon-size"></i></h3></i></a>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <p class="para-text"><%= content %></p>
+    </div>
+</section>
+
+<%- include("partials/footer") %> 
