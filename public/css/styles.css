@@ -75,7 +75,7 @@ body {
 /* For home.ejs */
 
 #home {
-    margin: 5% 0;
+    margin: 8% 0;
 }
 
 #home h2 {
@@ -196,23 +196,23 @@ table {
 
 @media(max-width: 500px) {
     #home {
-        margin: 22% 0;
+        margin: 25% 0;
     }
     
     #compose {
-        margin: 22% 0;
+        margin: 25% 0;
     }
     
     #about {
-        margin: 22% 0;
+        margin: 25% 0;
     }
     
     #contact {
-        margin: 22% 0;
+        margin: 25% 0;
     }
     
     #post {
-        margin: 22% 0;
+        margin: 25% 0;
     }
 
     #about img, #contact img {
