@@ -187,6 +187,11 @@ table {
     width: 100%;
 }
 
+.heading-name {
+    text-align: center;
+    color: #00a650;
+}
+
 /* For Mobile Phones */
 
 @media(max-width: 500px) {
